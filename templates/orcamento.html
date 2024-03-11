@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../static//Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" type="image/png" href="../static/img/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Master Light</title>
+</head>
+
+<body>
+    <aside id="header">
+        <section class="profile">
+            <img src="../static/img/LogoMasterLight.png">
+            <h1>Master Light</h1>
+            <div class="social-links mt-4 text-center">
+                <a target="_blank" href="https://www.instagram.com/masterlightoficial?igsh=NjV4YmpjZXhzcnMz">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </section>
+    </aside>
+    <main id="mainOrcamento">
+        <div class="orc_cabecalho">
+            <form action="orcamento" method="POST">
+                <h2 class="pt-3">Orçamento</h2>
+                <button type="submit" id="btn_gerar">Gerar PDF</button>
+                <br><br>
+                <label for="nomCli">Nome</label>
+                <input type="text" name="nomeCli" required placeholder="Nome Cliente"><br><br>                
+                <label for="DesOrcamento">Descrição do Orçamento:</label><br><br>
+                <textarea rows="5" cols="100" name="descriptService" required placeholder="Escreva o resumo do Serviço">
+                </textarea>
+                <br><br>
+                <h2 class="pt-3">Materiais:</h2>
+                <label for="ListaMatnr">Lista de Materiais:</label><br><br>
+                <textarea rows="5" cols="100" name="materialList" required placeholder="Escreva a Lista de Materiais">
+                </textarea>
+                <br><br>
+                <h2 class="pt-3">Materiais Alternativo:</h2>
+                <label for="ListaMatnrAlter">Lista de Materiais Alternativo:</label><br><br>
+                <textarea rows="5" cols="100" name="materialListAter" required placeholder="Escreva a Lista de Materiais Alternativos">
+                </textarea>
+                <br><br>
+                <div>
+                    <p>**Obs: Caso haja mudanças na quantidade de serviços de reparos e instalações, o valor da mão de obra
+                        e material poderá ser alterado.
+                        </p>
+                </div>
+                <div class="responsavel col-mt-1">
+                    <p>Técnico Responsável :
+                        Jessé Motta dos Santos.
+                        Contato:(12)99123-3660 e (12)97814-4506.
+                        Instagram :@masterlightoficial.
+                        Cnpj:48.704.014/0001-12</p>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
